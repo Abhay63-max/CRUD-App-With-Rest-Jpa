@@ -1,0 +1,23 @@
+div.ui.blue.secondary.menu{
+    margin-top: 15px;
+    background-color:coral;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+a.ui.item{
+    font-weight: bold;
+    font-size: 20px;
+}
+div.item.center.aligned{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+h2{
+    font-size: 35px;
+}
+

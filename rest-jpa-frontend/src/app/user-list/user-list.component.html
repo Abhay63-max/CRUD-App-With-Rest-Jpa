@@ -1,0 +1,21 @@
+<table class="ui celled table">
+    <thead>
+      <tr><th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr></thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td data-label="Id">{{user.id}}</td>
+        <td data-label="Name">{{user.name}}</td>
+        <td data-label="Email">{{user.email}}</td>
+        <td>
+          <button class="ui green button custom-button" (click)="showEditModal(user)">Edit</button>
+          <button class="ui red button custom-button" (click)="showDeleteModal(user)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
+<app-update-user [user]="user"></app-update-user>
+<app-delete-user [user]="user" (userDeleted)="onUserDeleted()"></app-delete-user>

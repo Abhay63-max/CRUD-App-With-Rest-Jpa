@@ -1,0 +1,15 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Add New User</h2>
+    <form (ngSubmit)="onSubmit()" class="ui form">
+        <div class="field">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" style="width: 50%;" [(ngModel)]="user.name">
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" style="width: 50%;" [(ngModel)]="user.email">
+            <label for="passwordInput">Password</label>
+            <input type="password" id="passwordInput" name="password" style="width: 50%;" [(ngModel)]="user.password">
+        </div>
+        <button type="Submit" class="ui button">Submit</button>
+    </form>
+</div>
+

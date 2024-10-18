@@ -1,0 +1,10 @@
+<div class="ui modal" id="deleteModal">
+    <div class="header">Confirm Deletion</div>
+    <div class="content">
+      <p>Are you sure you want to delete <strong>{{ user?.name }}</strong>?</p>
+    </div>
+    <div class="actions">
+      <div class="ui cancel button">Cancel</div>
+      <div class="ui red button" (click)="deleteUser()">Delete</div>
+    </div>
+</div>
